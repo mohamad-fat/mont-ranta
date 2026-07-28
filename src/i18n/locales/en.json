@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "accommodation": "Accommodation",
+    "packages": "Packages",
+    "events": "Events",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "A Hideaway in the Clouds",
+    "subtitle": "Luxury bungalows, mountain tents, family retreats, and unforgettable outdoor experiences in the heart of Qrayat, Akkar.",
+    "explore": "Explore Packages",
+    "scroll": "Scroll"
+  },
+  "home": {
+    "search": {
+      "checkIn": "Check-in / Check-out",
+      "selectDates": "Select Dates",
+      "guests": "Guests",
+      "guestCount": "2 Adults, 0 Children",
+      "checkAvailability": "Check Availability"
+    },
+    "about": {
+      "title": "Inspired by the Mountain",
+      "text": "Mont-Ranta offers a peaceful escape into nature where families, couples, and groups can reconnect away from city life. Nestled in the breathtaking landscapes of Qrayat, our eco-tourism retreat blends luxury with the raw beauty of Akkar."
+    },
+    "accommodations": {
+      "title": "Our Accommodations",
+      "subtitle": "Find your perfect retreat. From cozy tents to luxury bungalows, we have something for every type of nature lover.",
+      "viewAll": "View All",
+      "available": "Available",
+      "luxuryBungalow": "Luxury Bungalow",
+      "bungalowDesc": "Experience ultimate comfort with our luxury bungalows featuring a private deck and stunning valley views.",
+      "guests": "2-4 Guests",
+      "hilltop": "Hilltop",
+      "price": "$120",
+      "perNight": " / night",
+      "book": "Book"
+    },
+    "packages": {
+      "title": "Curated Experiences",
+      "subtitle": "Whether you're looking for romance, family fun, or a corporate retreat, our packages are designed for unforgettable moments.",
+      "romantic": "Romantic Escape",
+      "family": "Family Adventure",
+      "friends": "Friends Weekend",
+      "corporate": "Corporate Retreat",
+      "features": {
+        "nights": "2 Nights stay",
+        "breakfast": "Breakfast included",
+        "bbq": "Private BBQ area"
+      },
+      "viewDetails": "View Details"
+    }
+  },
+  "footer": {
+    "desc": "Experience the peace of nature in our luxury bungalows and mountain tents in the heart of Qrayat, Akkar.",
+    "quickLinks": "Quick Links",
+    "support": "Support",
+    "contactInfo": "Contact Info",
+    "aboutUs": "About Us",
+    "faq": "FAQ",
+    "contactUs": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "location": "Qrayat, Akkar, North Lebanon",
+    "rights": "Mont-Ranta. All rights reserved.",
+    "designed": "Designed with ❤ for nature."
+  },
+  "data": {
+    "accommodations": {
+      "basicTent": {
+        "name": "Basic Tent",
+        "description": "A cozy, minimalist tent perfect for adventurers who want to sleep under the stars. Includes essential bedding and shared facilities.",
+        "price": 20,
+        "guests": "1-2 Guests"
+      },
+      "domeTent": {
+        "name": "Dome Tent",
+        "description": "Experience glamping at its finest in our spacious dome tents. Features comfortable beds, panoramic windows, and private seating area.",
+        "price": 50,
+        "guests": "2-3 Guests"
+      },
+      "stoneHouse": {
+        "name": "Stone House",
+        "description": "Our premium traditional stone house offering luxury and heritage. Complete with a private terrace, en-suite bathroom, and breathtaking valley views.",
+        "price": 50,
+        "guests": "2-4 Guests"
+      }
+    },
+    "packages": {
+      "marriage": {
+        "name": "Marriage Retreat",
+        "description": "A romantic getaway designed for newlyweds or anniversaries. Includes private dining, special room decor, and a guided sunset hike.",
+        "price": "From $150"
+      },
+      "family": {
+        "name": "Family Adventure",
+        "description": "Reconnect with your loved ones. Features a large accommodation setup, kid-friendly activities, and an exclusive BBQ night.",
+        "price": "From $120"
+      },
+      "friends": {
+        "name": "Friends Camping (Small Tents)",
+        "description": "Gather your friends for a classic camping experience in a cluster of small tents around a shared bonfire pit.",
+        "price": "From $80"
+      }
+    }
+  }
+}
