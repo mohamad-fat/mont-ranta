@@ -5,12 +5,12 @@ export default function Gallery() {
   const { i18n } = useTranslation();
 
   const galleryItems = [
-    { id: 1, src: '/assets/hero.jpg', captionEn: 'Sunset over the Akkar Mountains', captionAr: 'غروب الشمس فوق جبال عكار' },
-    { id: 2, src: '/assets/house_1.png', captionEn: 'Traditional Stone House', captionAr: 'بيت الحجر التقليدي' },
-    { id: 3, src: '/assets/hero.jpg', captionEn: 'Stargazing at Night', captionAr: 'مراقبة النجوم في الليل' },
-    { id: 4, src: '/assets/house_1.png', captionEn: 'Cozy Interior & Views', captionAr: 'إطلالات داخلية مريحة' },
-    { id: 5, src: '/assets/hero.jpg', captionEn: 'Morning Fog in Qrayat', captionAr: 'ضباب الصباح في القريات' },
-    { id: 6, src: '/assets/house_1.png', captionEn: 'Mountain Trails', captionAr: 'مسارات الجبال' }
+    { id: 1, src: './assets/hero.jpg', captionEn: 'Sunset over the Akkar Mountains', captionAr: 'غروب الشمس فوق جبال عكار' },
+    { id: 2, src: './assets/stone_house.png', captionEn: 'Traditional Stone House', captionAr: 'بيت الحجر التقليدي' },
+    { id: 3, src: './assets/basic_tent.png', captionEn: 'Stargazing Tent Camping', captionAr: 'مخيّم الخيام تحت النجوم' },
+    { id: 4, src: './assets/about_us.jpg', captionEn: 'Cozy Interior & Views', captionAr: 'إطلالات داخلية مريحة' },
+    { id: 5, src: './assets/special-tent.png', captionEn: 'Dome Glamping Tent', captionAr: 'خيمة القبة الفاخرة' },
+    { id: 6, src: './assets/tent_village.jpg', captionEn: 'Mountain Trails & Campfire', captionAr: 'مسارات الجبال وسهرات النار' }
   ];
 
   return (

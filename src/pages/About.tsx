@@ -32,7 +32,7 @@ export default function About() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="/assets/house_1.png" alt="Mont-Ranta story" className="rounded-3xl shadow-xl w-full h-80 object-cover" />
+              <img src="./assets/about_us.jpg" alt="Mont-Ranta story" className="rounded-3xl shadow-xl w-full h-80 object-cover" />
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>

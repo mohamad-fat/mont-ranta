@@ -16,7 +16,7 @@ export default function Events() {
       descEn: 'Celebrate your special moments surrounded by pristine pine forests and mountain views. Complete catering and setup available.',
       descAr: 'احتفل بلحظاتك الخاصة وسط غابات الصنوبر وإطلالات الجبال. تتوفر خدمة تقديم الطعام والتجهيز الكامل.',
       icon: PartyPopper,
-      image: '/assets/house_1.png'
+      image: './assets/about_us.jpg'
     },
     {
       id: 'bbq_nights',
@@ -25,7 +25,7 @@ export default function Events() {
       descEn: 'Gather around the open bonfire for live barbecue, traditional music, and stargazing high above the cloud line.',
       descAr: 'اجتمع حول نار المخيم المفتوحة للمشويات الطازجة والموسيقى التقليدية ومراقبة النجوم فوق السحاب.',
       icon: Flame,
-      image: '/assets/hero.jpg'
+      image: './assets/hero.jpg'
     },
     {
       id: 'workshops',
@@ -34,7 +34,7 @@ export default function Events() {
       descEn: 'Peaceful open-air spaces perfect for wellness retreats, group meditation, and corporate team building.',
       descAr: 'مساحات خارجية هادئة مثالية لجلسات الاسترخاء واليوغا والتأمل الجماعي والفعاليات المؤسسية.',
       icon: Music,
-      image: '/assets/house_1.png'
+      image: './assets/tent_village.jpg'
     }
   ];
 

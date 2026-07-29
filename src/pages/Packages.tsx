@@ -11,17 +11,17 @@ export default function Packages() {
   const packages = [
     {
       id: 'marriage',
-      image: '/assets/hero.jpg', 
+      image: './assets/about_us.jpg', 
       features: ['Private Dining', 'Room Decoration', 'Sunset Hike', 'Breakfast in Bed']
     },
     {
       id: 'family',
-      image: '/assets/house_1.png',
+      image: './assets/stone_house.png',
       features: ['Large Setup', 'Kid Activities', 'BBQ Night', 'Board Games']
     },
     {
       id: 'friends',
-      image: '/assets/hero.jpg', 
+      image: './assets/tent_village.jpg', 
       features: ['Clustered Tents', 'Shared Bonfire', 'Group Activities', 'Late Check-out']
     }
   ];

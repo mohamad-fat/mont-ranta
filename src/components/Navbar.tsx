@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0 flex items-center gap-3">
             <Link to="/" className="flex items-center gap-2">
-              <img className="h-12 w-auto object-cover rounded-md" src="/assets/logo.jpeg" alt="Mont-Ranta Logo" />
+              <img className="h-12 w-auto object-cover rounded-md" src="./assets/logo.jpeg" alt="Mont-Ranta Logo" />
               <span className="font-serif text-2xl font-semibold text-primary hidden sm:block">Mont-Ranta</span>
             </Link>
           </div>

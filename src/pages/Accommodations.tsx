@@ -11,17 +11,17 @@ export default function Accommodations() {
   const accommodations = [
     {
       id: 'stoneHouse',
-      image: '/assets/house_1.png',
+      image: './assets/stone_house.png',
       features: ['Private Terrace', 'En-suite Bathroom', 'Valley View', 'Queen Bed']
     },
     {
       id: 'domeTent',
-      image: '/assets/hero.jpg', // Placeholder since we only have house_1 and hero right now
+      image: './assets/special-tent.png',
       features: ['Panoramic Window', 'Comfortable Bedding', 'Stargazing', 'Seating Area']
     },
     {
       id: 'basicTent',
-      image: '/assets/house_1.png', // Placeholder
+      image: './assets/basic_tent.png',
       features: ['Shared Facilities', 'Essential Bedding', 'Nature Surroundings', 'Firepit Access']
     }
   ];

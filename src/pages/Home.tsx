@@ -16,7 +16,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/hero.jpg" 
+            src="./assets/hero.jpg" 
             alt="Mont-Ranta mountains and nature" 
             className="w-full h-full object-cover"
           />
@@ -121,7 +121,7 @@ export default function Home() {
               {t('home.about.text')}
             </p>
             <div className="mt-10">
-               <img src="/assets/house_1.png" alt="Mont-Ranta Bungalow" className="w-full max-w-3xl mx-auto rounded-3xl shadow-2xl" />
+               <img src="./assets/stone_house.png" alt="Mont-Ranta Bungalow" className="w-full max-w-3xl mx-auto rounded-3xl shadow-2xl" />
             </div>
           </motion.div>
         </div>
@@ -141,33 +141,39 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <Card key={item} className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer rounded-2xl bg-warm-off-white">
-                <div className="relative h-64 overflow-hidden">
-                  <img src="/assets/house_1.png" alt="Bungalow" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-dark-charcoal text-sm font-semibold py-1 px-3 rounded-full">
-                    {t('home.accommodations.available')}
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="font-serif text-2xl font-semibold mb-2 text-primary">{t('home.accommodations.luxuryBungalow')} {item}</h3>
-                  <p className="text-muted-foreground mb-4 line-clamp-2">{t('home.accommodations.bungalowDesc')}</p>
-                  
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
-                    <div className="flex items-center gap-1"><Users className="h-4 w-4" /> {t('home.accommodations.guests')}</div>
-                    <div className="flex items-center gap-1"><MapPin className="h-4 w-4" /> {t('home.accommodations.hilltop')}</div>
-                  </div>
-                  
-                  <div className="flex items-center justify-between mt-auto">
-                    <div>
-                      <span className="text-2xl font-bold text-dark-charcoal">{t('home.accommodations.price')}</span>
-                      <span className="text-sm text-muted-foreground">{t('home.accommodations.perNight')}</span>
+            {[
+              { id: 'basicTent', image: './assets/basic_tent.png' },
+              { id: 'domeTent', image: './assets/special-tent.png' },
+              { id: 'stoneHouse', image: './assets/stone_house.png' }
+            ].map((acc) => (
+              <Card key={acc.id} className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer rounded-2xl bg-warm-off-white flex flex-col justify-between">
+                <div>
+                  <div className="relative h-64 overflow-hidden">
+                    <img src={acc.image} alt={t(`data.accommodations.${acc.id}.name`)} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-dark-charcoal text-sm font-semibold py-1 px-3 rounded-full">
+                      {t('home.accommodations.available')}
                     </div>
-                    <a href={generateWhatsAppLink(i18n.language, `${t('home.accommodations.luxuryBungalow')} ${item}`)} target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-primary hover:bg-primary/90 rounded-full">{t('home.accommodations.book')}</Button>
-                    </a>
                   </div>
-                </CardContent>
+                  <CardContent className="p-6">
+                    <h3 className="font-serif text-2xl font-semibold mb-2 text-primary">{t(`data.accommodations.${acc.id}.name`)}</h3>
+                    <p className="text-muted-foreground mb-4 line-clamp-2">{t(`data.accommodations.${acc.id}.description`)}</p>
+                    
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
+                      <div className="flex items-center gap-1"><Users className="h-4 w-4 text-primary" /> {t(`data.accommodations.${acc.id}.guests`)}</div>
+                      <div className="flex items-center gap-1"><MapPin className="h-4 w-4 text-primary" /> {t('home.accommodations.hilltop')}</div>
+                    </div>
+                  </CardContent>
+                </div>
+
+                <div className="p-6 pt-0 flex items-center justify-between mt-auto">
+                  <div>
+                    <span className="text-2xl font-bold text-dark-charcoal">${t(`data.accommodations.${acc.id}.price`)}</span>
+                    <span className="text-sm text-muted-foreground">{t('home.accommodations.perNight')}</span>
+                  </div>
+                  <a href={generateWhatsAppLink(i18n.language, t(`data.accommodations.${acc.id}.name`))} target="_blank" rel="noopener noreferrer">
+                    <Button className="bg-primary hover:bg-primary/90 rounded-full">{t('home.accommodations.book')}</Button>
+                  </a>
+                </div>
               </Card>
             ))}
           </div>

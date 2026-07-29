@@ -57,7 +57,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-dark-charcoal">{i18n.language === 'ar' ? 'الهاتف / واتساب' : 'Phone / WhatsApp'}</h3>
-                    <p dir="ltr" className="text-left">+961 70 123 456</p>
+                    <p dir="ltr" className="text-left">+961 71 752 717</p>
                   </div>
                 </div>
 

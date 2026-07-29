@@ -74,19 +74,19 @@
       "basicTent": {
         "name": "Basic Tent",
         "description": "A cozy, minimalist tent perfect for adventurers who want to sleep under the stars. Includes essential bedding and shared facilities.",
-        "price": 20,
+        "price": 30,
         "guests": "1-2 Guests"
       },
       "domeTent": {
-        "name": "Dome Tent",
-        "description": "Experience glamping at its finest in our spacious dome tents. Features comfortable beds, panoramic windows, and private seating area.",
-        "price": 50,
+        "name": "Special Tent",
+        "description": "Experience glamping at its finest in our spacious special tents. Features comfortable beds, panoramic windows, and private seating area.",
+        "price": 60,
         "guests": "2-3 Guests"
       },
       "stoneHouse": {
         "name": "Stone House",
         "description": "Our premium traditional stone house offering luxury and heritage. Complete with a private terrace, en-suite bathroom, and breathtaking valley views.",
-        "price": 50,
+        "price": 60,
         "guests": "2-4 Guests"
       }
     },
