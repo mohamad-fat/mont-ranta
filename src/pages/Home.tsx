@@ -25,9 +25,8 @@ export default function Home() {
           <img 
             src="./assets/hero.jpg" 
             alt="Mont-Ranta mountains and nature" 
-            className="w-full h-full object-cover scale-105 animate-in fade-in duration-1000"
+            className="w-full h-full object-cover object-center transition-all duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/90 via-dark-charcoal/40 to-dark-charcoal/30" />
         </div>
 
         {/* Hero Content */}
@@ -37,7 +36,7 @@ export default function Home() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark text-amber-300 text-xs sm:text-sm font-medium mb-6 shadow-lg"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-amber-300 text-xs sm:text-sm font-semibold mb-6 shadow-2xl"
           >
             <MapPin className="w-4 h-4 text-amber-300" />
             <span>{i18n.language === 'ar' ? 'القريات، عكار، شمال لبنان • ملاذ بين السحاب' : 'Qrayat, Akkar, North Lebanon • Hideaway in the Clouds'}</span>
@@ -47,7 +46,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight drop-shadow-md text-white"
+            className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.85)]"
           >
             {t('hero.title')}
           </motion.h1>
@@ -56,7 +55,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mb-10 text-white/90 font-light leading-relaxed drop-shadow"
+            className="max-w-3xl mx-auto mb-10 text-white font-medium text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-center drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)] [text-shadow:_0_2px_12px_rgba(0,0,0,0.9)]"
           >
             {t('hero.subtitle')}
           </motion.p>
@@ -93,7 +92,7 @@ export default function Home() {
       </section>
 
       {/* Quick Availability Check Bar */}
-      <section className="relative z-20 -mt-16 container mx-auto px-4 max-w-5xl">
+      <section className="relative z-20 mt-10 mb-16 container mx-auto px-4 max-w-5xl">
         <Card className="bg-white/95 backdrop-blur-2xl shadow-2xl border border-white/50 rounded-3xl overflow-hidden">
           <CardContent className="p-3 sm:p-5">
             <div className="flex flex-col md:flex-row items-center gap-4 divide-y md:divide-y-0 md:divide-x rtl:md:divide-x-reverse divide-border/60">
