@@ -74,7 +74,7 @@
       "basicTent": {
         "name": "Basic Tent",
         "description": "A cozy, minimalist tent perfect for adventurers who want to sleep under the stars. Includes essential bedding and shared facilities.",
-        "price": 30,
+        "price": 25,
         "guests": "1-2 Guests"
       },
       "domeTent": {
