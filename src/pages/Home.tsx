@@ -23,7 +23,7 @@ export default function Home() {
         {/* Background Image with Ambient Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="./assets/hero.jpg" 
+            src="./assets/hero.jpeg" 
             alt="Mont-Ranta mountains and nature" 
             className="w-full h-full object-cover object-center transition-all duration-700"
           />
